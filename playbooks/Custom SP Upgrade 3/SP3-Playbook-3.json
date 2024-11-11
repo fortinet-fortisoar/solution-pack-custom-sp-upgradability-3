@@ -1,0 +1,87 @@
+{
+    "@context": "\/api\/3\/contexts\/Workflow",
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "SP3-Playbook-3",
+    "aliasName": null,
+    "tag": null,
+    "description": null,
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/fc86ca65-75e3-4c40-86d8-b72676c64b5d",
+    "versions": [],
+    "triggerStep": "\/api\/3\/workflow_steps\/f71d7a99-660d-42c5-bb0f-6fc2576f71ab",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "QA",
+            "description": null,
+            "arguments": [],
+            "status": null,
+            "top": "93",
+            "left": "566",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "4d0dceda-a9b1-4e59-93d0-8f8a7822dfef"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "route": "79d6e955-b84e-45a2-b885-996b4ca63def",
+                "resources": [
+                    "alerts"
+                ],
+                "__triggerLimit": true,
+                "inputVariables": [],
+                "step_variables": {
+                    "input": {
+                        "params": [],
+                        "records": "{{vars.input.records}}"
+                    }
+                },
+                "triggerOnSource": true,
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "showToasterMessage": {
+                    "visible": false,
+                    "messageVisible": true
+                },
+                "triggerOnReplicate": false,
+                "singleRecordExecution": false
+            },
+            "status": null,
+            "top": "40",
+            "left": "40",
+            "stepType": "\/api\/3\/workflow_step_types\/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+            "group": null,
+            "uuid": "f71d7a99-660d-42c5-bb0f-6fc2576f71ab"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> QA",
+            "targetStep": "\/api\/3\/workflow_steps\/4d0dceda-a9b1-4e59-93d0-8f8a7822dfef",
+            "sourceStep": "\/api\/3\/workflow_steps\/f71d7a99-660d-42c5-bb0f-6fc2576f71ab",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "fefdda7b-2b2c-4381-a2ce-0dcbce3e4b2d"
+        }
+    ],
+    "groups": [],
+    "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+    "playbookOrigin": "\/api\/3\/picklists\/b6d710a9-a8ec-41ec-8817-fe9fa062fcdd",
+    "isEditable": true,
+    "uuid": "d4c41b96-0590-42d1-9a66-792a5981a857",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": []
+}

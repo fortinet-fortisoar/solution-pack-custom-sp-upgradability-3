@@ -1,0 +1,7 @@
+[
+    {
+        "name": "incidentCorrelations",
+        "title": "Incident Correlations",
+        "install_mode": "rpm"
+    }
+]

@@ -1,0 +1,157 @@
+{
+    "@context": "\/api\/3\/contexts\/Workflow",
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "SP3-Playbook-2",
+    "aliasName": null,
+    "tag": null,
+    "description": null,
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/fc86ca65-75e3-4c40-86d8-b72676c64b5d",
+    "versions": [
+        {
+            "@type": "WorkflowVersion",
+            "note": "Base",
+            "json": "{\"@context\":\"\\\/api\\\/3\\\/contexts\\\/Workflow\",\"@type\":\"Workflow\",\"triggerLimit\":null,\"name\":\"SP3-Playbook-2\",\"aliasName\":null,\"tag\":null,\"description\":null,\"isActive\":true,\"debug\":false,\"singleRecordExecution\":false,\"remoteExecutableFlag\":false,\"parameters\":[],\"synchronous\":false,\"collection\":\"\\\/api\\\/3\\\/workflow_collections\\\/fc86ca65-75e3-4c40-86d8-b72676c64b5d\",\"versions\":[],\"triggerStep\":\"\\\/api\\\/3\\\/workflow_steps\\\/b3de5031-4789-4de6-bc09-d909f199cc17\",\"steps\":[{\"@type\":\"WorkflowStep\",\"name\":\"Start\",\"description\":null,\"arguments\":{\"route\":\"c647f5fd-9330-41a3-8da0-153967c0b8ae\",\"resources\":[\"alerts\"],\"__triggerLimit\":true,\"inputVariables\":[],\"step_variables\":{\"input\":{\"params\":[],\"records\":\"{{vars.input.records}}\"}},\"triggerOnSource\":true,\"executeButtonText\":\"Execute\",\"noRecordExecution\":true,\"showToasterMessage\":{\"visible\":false,\"messageVisible\":true},\"triggerOnReplicate\":false,\"singleRecordExecution\":false},\"status\":null,\"top\":\"40\",\"left\":\"40\",\"stepType\":{\"@context\":\"\\\/api\\\/3\\\/contexts\\\/WorkflowStepType\",\"@type\":\"WorkflowStepType\",\"name\":\"cybersponse.action\",\"displayName\":\"Manual\",\"widget\":null,\"collection\":\"\\\/api\\\/3\\\/step_type_collections\\\/51627f80-3dd5-4260-b86d-cc53a7cece15\",\"arguments\":[],\"parent\":\"\\\/api\\\/3\\\/workflow_step_types\\\/b348f017-9a94-471f-87f8-ce88b6a7ad62\",\"icon\":\"icon icon-manual\",\"background\":\"#e1e815\",\"index\":110,\"visible\":true,\"deprecated\":false,\"description\":\"Triggered when the user selects record(s) and then selects the playbook from the \\\"Execute\\\" list.\",\"uuid\":\"f414d039-bb0d-4e59-9c39-a8f1e880b18a\"},\"group\":null,\"uuid\":\"b3de5031-4789-4de6-bc09-d909f199cc17\",\"@id\":\"\\\/api\\\/3\\\/workflow_steps\\\/b3de5031-4789-4de6-bc09-d909f199cc17\",\"htmlEncodedName\":\"Start\",\"htmlEncodedDescription\":null},{\"@type\":\"WorkflowStep\",\"name\":\"Wait\",\"description\":null,\"arguments\":{\"rule\":{\"actions\":[{\"type\":\"resume_playbook\",\"enabled\":true,\"channel_uuid\":\"e2ce87c2-c55a-11ec-9d64-0242ac120002\"}],\"is_active\":true,\"event_source\":\"crudhub\"},\"type\":\"TimeBased\",\"delay\":{\"days\":0,\"hours\":0,\"weeks\":0,\"minutes\":0,\"seconds\":5}},\"status\":null,\"top\":\"125\",\"left\":\"535\",\"stepType\":{\"@context\":\"\\\/api\\\/3\\\/contexts\\\/WorkflowStepType\",\"@type\":\"WorkflowStepType\",\"name\":\"Delay\",\"displayName\":\"Wait\",\"widget\":null,\"collection\":\"\\\/api\\\/3\\\/step_type_collections\\\/c06cd820-a031-433b-9094-220dda64b4e4\",\"arguments\":{\"script\":\"\\\/wf\\\/workflow\\\/tasks\\\/delay\"},\"parent\":\"\\\/api\\\/3\\\/workflow_step_types\\\/ee73e569-2188-43fe-a7f0-1964ba82a4de\",\"icon\":\"icon icon-wait\",\"background\":\"#52b200\",\"index\":220,\"visible\":true,\"deprecated\":false,\"description\":null,\"uuid\":\"6832e556-b9c7-497a-babe-feda3bd27dbf\"},\"group\":null,\"uuid\":\"bd548a20-9c72-48b6-b1f6-53ef6efd64ee\",\"@id\":\"\\\/api\\\/3\\\/workflow_steps\\\/bd548a20-9c72-48b6-b1f6-53ef6efd64ee\",\"htmlEncodedName\":\"Wait\",\"htmlEncodedDescription\":null}],\"routes\":[{\"@type\":\"WorkflowRoute\",\"name\":\"Start -> Wait\",\"targetStep\":\"\\\/api\\\/3\\\/workflow_steps\\\/bd548a20-9c72-48b6-b1f6-53ef6efd64ee\",\"sourceStep\":\"\\\/api\\\/3\\\/workflow_steps\\\/b3de5031-4789-4de6-bc09-d909f199cc17\",\"label\":null,\"isExecuted\":false,\"group\":null,\"uuid\":\"c7156ee5-78e2-4b37-bd1e-038d13fb9433\",\"@id\":\"\\\/api\\\/3\\\/workflow_routes\\\/c7156ee5-78e2-4b37-bd1e-038d13fb9433\"}],\"groups\":[],\"priority\":\"\\\/api\\\/3\\\/picklists\\\/2b563c61-ae2c-41c0-a85a-c9709585e3f2\",\"playbookOrigin\":\"\\\/api\\\/3\\\/picklists\\\/b6d710a9-a8ec-41ec-8817-fe9fa062fcdd\",\"isEditable\":true,\"uuid\":\"6b9c224e-499f-4ab6-819f-dc18ba979b73\",\"owners\":[],\"isPrivate\":false,\"deletedAt\":null,\"recordTags\":[],\"@id\":\"\\\/api\\\/3\\\/workflows\\\/6b9c224e-499f-4ab6-819f-dc18ba979b73\",\"importedBy\":[{\"apiName\":\"customSPUpgradability-3\",\"name\":\"Custom SP Upgradability-3\",\"version\":\"1.0.0\"}]}",
+            "autosave": false,
+            "workflow": "\/api\/3\/workflows\/6b9c224e-499f-4ab6-819f-dc18ba979b73",
+            "uuid": "624f0972-7038-42aa-9d2e-7f37fd109968"
+        }
+    ],
+    "triggerStep": "\/api\/3\/workflow_steps\/b3de5031-4789-4de6-bc09-d909f199cc17",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "route": "c647f5fd-9330-41a3-8da0-153967c0b8ae",
+                "resources": [
+                    "alerts"
+                ],
+                "__triggerLimit": true,
+                "inputVariables": [],
+                "step_variables": {
+                    "input": {
+                        "params": [],
+                        "records": "{{vars.input.records}}"
+                    }
+                },
+                "triggerOnSource": true,
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "showToasterMessage": {
+                    "visible": false,
+                    "messageVisible": true
+                },
+                "triggerOnReplicate": false,
+                "singleRecordExecution": false
+            },
+            "status": null,
+            "top": "40",
+            "left": "40",
+            "stepType": "\/api\/3\/workflow_step_types\/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+            "group": null,
+            "uuid": "b3de5031-4789-4de6-bc09-d909f199cc17"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Updated PB Step",
+            "description": null,
+            "arguments": {
+                "rule": {
+                    "actions": [
+                        {
+                            "type": "resume_playbook",
+                            "enabled": true,
+                            "channel_uuid": "e2ce87c2-c55a-11ec-9d64-0242ac120002"
+                        }
+                    ],
+                    "is_active": true,
+                    "event_source": "crudhub"
+                },
+                "type": "TimeBased",
+                "delay": {
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "status": null,
+            "top": "177",
+            "left": "938",
+            "stepType": "\/api\/3\/workflow_step_types\/6832e556-b9c7-497a-babe-feda3bd27dbf",
+            "group": null,
+            "uuid": "8dc075e8-a3b0-4bc1-9ccf-d0a7f572391c"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Wait",
+            "description": null,
+            "arguments": {
+                "rule": {
+                    "actions": [
+                        {
+                            "type": "resume_playbook",
+                            "enabled": true,
+                            "channel_uuid": "e2ce87c2-c55a-11ec-9d64-0242ac120002"
+                        }
+                    ],
+                    "is_active": true,
+                    "event_source": "crudhub"
+                },
+                "type": "TimeBased",
+                "delay": {
+                    "days": 0,
+                    "hours": 0,
+                    "weeks": 0,
+                    "minutes": 0,
+                    "seconds": 5
+                }
+            },
+            "status": null,
+            "top": "125",
+            "left": "535",
+            "stepType": "\/api\/3\/workflow_step_types\/6832e556-b9c7-497a-babe-feda3bd27dbf",
+            "group": null,
+            "uuid": "bd548a20-9c72-48b6-b1f6-53ef6efd64ee"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> Wait",
+            "targetStep": "\/api\/3\/workflow_steps\/bd548a20-9c72-48b6-b1f6-53ef6efd64ee",
+            "sourceStep": "\/api\/3\/workflow_steps\/b3de5031-4789-4de6-bc09-d909f199cc17",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "c7156ee5-78e2-4b37-bd1e-038d13fb9433"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "Wait -> Updated PB Step",
+            "targetStep": "\/api\/3\/workflow_steps\/8dc075e8-a3b0-4bc1-9ccf-d0a7f572391c",
+            "sourceStep": "\/api\/3\/workflow_steps\/bd548a20-9c72-48b6-b1f6-53ef6efd64ee",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "845cbd52-5162-4adb-b661-3d3283eab6ab"
+        }
+    ],
+    "groups": [],
+    "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+    "playbookOrigin": "\/api\/3\/picklists\/b6d710a9-a8ec-41ec-8817-fe9fa062fcdd",
+    "isEditable": false,
+    "uuid": "6b9c224e-499f-4ab6-819f-dc18ba979b73",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": []
+}

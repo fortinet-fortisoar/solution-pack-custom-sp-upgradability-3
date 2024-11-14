@@ -1,0 +1,62 @@
+{
+    "name": "customSPUpgradability-3",
+    "version": "2.0.0",
+    "fsrMinCompatibility": "7.2.0",
+    "type": "solutionpack",
+    "local": true,
+    "label": "Custom SP Upgradability-3",
+    "dependencies": [
+        {
+            "name": "customSPUpgradability-2",
+            "type": "solutionpack",
+            "label": "Custom SP Upgradability-2",
+            "minVersion": "2.0.0"
+        }
+    ],
+    "prerequisite": null,
+    "publisher": "Community",
+    "description": "",
+    "help": null,
+    "category": [],
+    "supportInfo": null,
+    "iconLarge": null,
+    "postInstallConfig": null,
+    "date": "2024-11-11T07:03:25+00:00",
+    "contents": {
+		
+		"views": {
+		            "navigation": [
+		                "Dashboard",
+		                "Queue & Shift Management",
+		                "Incident Response",
+		                "Automation",
+		                "Resources",
+		                "Reports",
+		                "Widget Library",
+		                "Content Hub",
+		                "Help",
+		                "User Community",
+		                "Credit Card Module",
+		                "Debit Card Module",
+		                "Company Modules"
+		            ]
+		        },
+        "playbooks": [
+            {
+                "name": "Custom SP Upgrade 3"
+            }
+        ],
+        "connectors": [
+            {
+                "name": "Fortinet FortiGate",
+                "apiName": "fortigate-firewall"
+            }
+        ],
+        "widgets": [
+            {
+                "apiName": "incidentCorrelations",
+                "name": "Incident Correlations"
+            }
+        ]
+    }
+}

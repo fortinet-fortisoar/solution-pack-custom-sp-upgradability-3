@@ -1,0 +1,11 @@
+{
+    "@context": "\/api\/3\/contexts\/WorkflowCollection",
+    "@type": "WorkflowCollection",
+    "name": "SP3 Pre Install PLaybook",
+    "description": null,
+    "visible": true,
+    "image": null,
+    "uuid": "519951d5-d234-4540-ad62-434ce00d8469",
+    "deletedAt": null,
+    "recordTags": []
+}

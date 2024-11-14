@@ -1,0 +1,7 @@
+{
+    "replaceNavigation": true,
+    "navigationItemsToReplace": [
+        "Incident Response",
+        "Automation"
+    ]
+}

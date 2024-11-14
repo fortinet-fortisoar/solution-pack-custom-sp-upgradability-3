@@ -1,0 +1,94 @@
+{
+    "@context": "\/api\/3\/contexts\/Workflow",
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "Post PLaybook",
+    "aliasName": null,
+    "tag": null,
+    "description": null,
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/5c923968-a536-42ce-9368-dd6b3197a4ec",
+    "versions": [],
+    "triggerStep": "\/api\/3\/workflow_steps\/85e333a1-227c-42be-a08b-b7cf0b9774f7",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "No Ops",
+            "description": null,
+            "arguments": {
+                "params": [],
+                "version": "3.5.0",
+                "connector": "cyops_utilities",
+                "operation": "no_op",
+                "operationTitle": "Utils: No Operation",
+                "step_variables": []
+            },
+            "status": null,
+            "top": "132",
+            "left": "386",
+            "stepType": "\/api\/3\/workflow_step_types\/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+            "group": null,
+            "uuid": "59a18472-bcca-4c69-9799-17f7839ad1dc"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "route": "f02d58c0-3d47-49a8-bc82-7476a0c4778e",
+                "resources": [
+                    "alerts"
+                ],
+                "__triggerLimit": true,
+                "inputVariables": [],
+                "step_variables": {
+                    "input": {
+                        "params": [],
+                        "records": "{{vars.input.records}}"
+                    }
+                },
+                "triggerOnSource": true,
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "showToasterMessage": {
+                    "visible": false,
+                    "messageVisible": true
+                },
+                "triggerOnReplicate": false,
+                "singleRecordExecution": false
+            },
+            "status": null,
+            "top": "40",
+            "left": "40",
+            "stepType": "\/api\/3\/workflow_step_types\/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+            "group": null,
+            "uuid": "85e333a1-227c-42be-a08b-b7cf0b9774f7"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> No Ops",
+            "targetStep": "\/api\/3\/workflow_steps\/59a18472-bcca-4c69-9799-17f7839ad1dc",
+            "sourceStep": "\/api\/3\/workflow_steps\/85e333a1-227c-42be-a08b-b7cf0b9774f7",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "91ef5c26-da83-4544-be01-8e9d0613945a"
+        }
+    ],
+    "groups": [],
+    "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+    "playbookOrigin": "\/api\/3\/picklists\/15c1e8c9-22bf-4e66-8fbb-0a502d4a4a3f",
+    "isEditable": true,
+    "uuid": "e2e80580-5e0a-4938-b0e2-041274739999",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": []
+}
